@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1pd-6k-vqu">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="demoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="ktY-Q6-hCh">
+                                <rect key="frame" x="20" y="318" width="353" height="216.33333333333337"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GAS-p8-rss">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DdS-OC-f8P">
+                                        <rect key="frame" x="0.0" y="91" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VX4-aP-JQT">
+                                        <rect key="frame" x="88.333333333333329" y="182" width="176.33333333333337" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SOw-jj-dlK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VX4-aP-JQT" firstAttribute="width" secondItem="ktY-Q6-hCh" secondAttribute="width" multiplier="0.5" id="K4g-w1-yI0"/>
+                                    <constraint firstItem="GAS-p8-rss" firstAttribute="width" secondItem="ktY-Q6-hCh" secondAttribute="width" id="el0-zz-Z1T"/>
+                                    <constraint firstItem="DdS-OC-f8P" firstAttribute="width" secondItem="ktY-Q6-hCh" secondAttribute="width" id="fRx-9m-UKK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ktY-Q6-hCh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="38g-No-RR9"/>
+                            <constraint firstItem="ktY-Q6-hCh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O4T-hO-81f"/>
+                            <constraint firstItem="ktY-Q6-hCh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iJB-I0-2h4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ktY-Q6-hCh" secondAttribute="trailing" constant="20" id="lzU-Qf-4fw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xo8-sp-xgQ"/>
+                    <connections>
+                        <outlet property="loginButton" destination="VX4-aP-JQT" id="9fX-Ml-6aM"/>
+                        <outlet property="mobileNumberTextField" destination="DdS-OC-f8P" id="xwC-WL-6pu"/>
+                        <outlet property="userNameTextField" destination="GAS-p8-rss" id="8rC-FK-ex5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782.44274809160299" y="3.5211267605633805"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="ES9-LV-4sK">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="kyn-7Q-9M8" customClass="HomeViewController" customModule="demoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PL1-ch-jJe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Dok-ok-gmr">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sMP-Lg-0Kb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dok-ok-gmr" firstAttribute="leading" secondItem="sMP-Lg-0Kb" secondAttribute="leading" id="QSg-5R-KfQ"/>
+                            <constraint firstItem="sMP-Lg-0Kb" firstAttribute="bottom" secondItem="Dok-ok-gmr" secondAttribute="bottom" id="n1I-df-Eua"/>
+                            <constraint firstItem="Dok-ok-gmr" firstAttribute="top" secondItem="sMP-Lg-0Kb" secondAttribute="top" id="xzn-Vg-o7t"/>
+                            <constraint firstItem="sMP-Lg-0Kb" firstAttribute="trailing" secondItem="Dok-ok-gmr" secondAttribute="trailing" id="yvi-z8-8ew"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="usernameTableView" destination="Dok-ok-gmr" id="7JI-uX-mFn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bS9-Ph-4Sw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466" y="17"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zub-Lu-sCk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1pd-6k-vqu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C3X-t3-rZZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AJm-8P-OY1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xX-Ft-NpX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-144.27480916030532" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
